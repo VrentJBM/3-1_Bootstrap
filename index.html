@@ -17,6 +17,54 @@
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                <a type="button" class="btn btn-outline-success ml-3"
+                data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                >Add Product</a>
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-success" id="exampleModalLabel1">Add a Product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+            
+            
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="text-light">Product Name</label>
+                      </div>
+            
+                      <div class="input-group mt-3">
+                        <span class="input-group-text">Description</span>
+                        <textarea class="form-control" aria-label="Description"></textarea>
+                      </div>
+
+                      <div class="input-group mt-3">
+                        <span class="input-group-text">$</span>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Price">
+                          <label for="floatingInputGroup1" class="text-light">Enter product's price</label>
+                        </div>
+                        <span class="input-group-text">.00</span>
+                      </div>
+
+                      <div class="mt-3">
+                        <label for="formFile" class="form-label text-light">Product Image</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+            
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-outline-success">Add</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
